@@ -109,8 +109,8 @@ Then I have checked the Training vs validation Accuracy and Training vs validati
 First model training attempt is done directly using available images from the dataset. Convnet trains to identify Son vs Not-Son images using Keras and TensorFlow backend. But overfitting happens during early iterations. If will see the above Taring Accuracy Vs Validation Accuracy, we are getting certain spikes in Validation Accuracy and Loss as comparison with Training Accuracy and Loss.
 == I have used Data Augmentation Technique in 2nd model to get the more accuracy, more training data is has been provided by implementing a data augmentation technique. Augmentation process directly generating as per the requirement more training data from recent data images, with the help of existing data. Random transformations have been performed to adjust the existing image and processing multiple images.
  In the real life scenario, we may have a dataset of images taken in a limited set of conditions. However, our target application may exist in a variety of conditions, such as different angle, brightness, location, scale etc.  We deal with these situations by training our CNN with augmentation for artificailly modified data.
-As I have initially 3000 images, so In Model 2 & Model 3 I have used this data augmentation technique. But in model 2 have used 50 Epochs and model 3 I am dealing with 80 Epochs. 
-Thus Model 3 is giving me better result in comparison with Model 2. That I shall discuss in conclusion summary. 
+### As I have initially 3000 images, so In Model 2 & Model 3 I have used this data augmentation technique. But in model 2 have used 50 Epochs and model 3 I am dealing with 80 Epochs. 
+### Thus Model 3 is giving me better result in comparison with Model 2. That I shall discuss in conclusion summary. 
 ![CNN-TrainingVsValidation-Plot-Model-Performance](CNN-TrainingVsValidation-Plot-Model-Performance.png)
 
 
