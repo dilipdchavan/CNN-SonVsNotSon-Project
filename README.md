@@ -135,6 +135,5 @@ My model can’t identify my son’s image in group photo [Test Image6], there I
 Our 1st Model were built on original images and 2nd & 3rd model improvise on Data augmentation technique. 
 I am really delighted that in 1st attempt on real life scenario, my CNN model Son Vs Not-Son has given excellent results. Only problem with Model 2 [epochs=50] however for same model I have increased epochs 80 in 3rd model and we were getting effective result and those 3rd model Test images results are better than 1st model. Still I have scope to fine tune this CNN model for better result.
 
-I have also uploaded this project on GitHub  dilipdchavan
 
 Thanks !
