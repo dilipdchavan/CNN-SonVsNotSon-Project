@@ -68,7 +68,7 @@ They grab the spatial features from an image. Spatial features highlighted towar
 ![CNN-Image-Classification](CNN-Image-Classification.png)
 CNNs has been constructed on an input, output and hidden layers. The hidden layers usually consist of convolutional layers, ReLU layers, pooling layers, and fully connected layers.
 The role of the ConvNet is narrow down the images into a form which is easier to process, without losing features which are critical for getting a good prediction. 
-A CNN has
+### A CNN has
 •	Convolutional layers
 •	ReLU layers
 •	Pooling layers
@@ -82,19 +82,19 @@ Now I will discuss more about CNN algorithm Son Vs Not-Son:
 * Validation Directories validation_son_dir & validation_notson_dir
 * Test Directories test_son_dir & test_notson_dir
 I have used Sequential model for Convolution and its appropriate model. Hence Sequential model allows us to construct model layer by layer. Each layer has respective weights those parallel to the layer follows it. We can use add() function to add layers in our model.
-== Conv2D layers in between will learn more filters than the early Conv2D layers but fewer filters than the layers closer to the output. Let’s look at our CNN algorithm example:
+### Conv2D layers in between will learn more filters than the early Conv2D layers but fewer filters than the layers closer to the output. Let’s look at our CNN algorithm example:
 The 1st we need Conv2D parameter is the number of “filters” that the convolutional layer will learn.
 In the starting steps will add fewer convolutional filters while in the deeper will add more filters and reaching towards to the output predictions.
-== For ex. model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+### For ex. model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 We would use the exact value depending on the intricacy of our dataset and depth of our CNN model. But always good to start with smaller number of filters [32, 64, 128, 256, 512]
-== The 2nd important parameter we need o add is Kernel size, denoting width and height of the 2D convolution. The default values for kernel size include: (1,1) or (3,3), (5,5), (7,7)
+### The 2nd important parameter we need o add is Kernel size, denoting width and height of the 2D convolution. The default values for kernel size include: (1,1) or (3,3), (5,5), (7,7)
 Most of the Convolution networks mostly used (3,3) 
 == Next, we have used activation function “relu”
 The activation function is a mathematical “gate” in between the input feeding of the current neuron and its output going to the next layer.
-ReLU [Rectified Linear Unit] is allows the network to converge very quickly. It’s non-linear and improvise for deep multi-layered networks with a nonlinear activation function using backpropagation.
+### [Rectified Linear Unit] is allows the network to converge very quickly. It’s non-linear and improvise for deep multi-layered networks with a nonlinear activation function using backpropagation.
 In previous days the default activation to use was the “Sigmoid” activation function then Later, it was the “Tanh” activation function.
 Now for modern deep learning neural networks, the default activation function is the ReLU rectified linear activation function.
-== Maxpooling Layer, input the feature maps and reduce the dimensionality to select the smaller image with most prominent feature.
+### Maxpooling Layer, input the feature maps and reduce the dimensionality to select the smaller image with most prominent feature.
 model.compile(loss='binary_crossentropy', optimizer=optimizers.RMSprop(lr=1e-4), metrics=['acc'])
 In model compilation, I have used the binary_crossentropy. The Binary cross-entropy is for multi-label classifications and it minimizes distance between 2 probability distributions Actual vs predicted
 I have used the following libraries for image preprocessing  from Keras
@@ -114,7 +114,7 @@ Thus Model 3 is giving me better result in comparison with Model 2. That I shall
 ![CNN-TrainingVsValidation-Plot-Model-Performance](CNN-TrainingVsValidation-Plot-Model-Performance.png)
 
 
-### Conclusion : 
+## Conclusion : 
 I have established 3 CNN models for Son Vs Not-Son Data Image Classification.
               Model 1                               vs                          Model 2                   vs                      Model 3
 [Image_Reco_SonVsNotSon2_Model1.ipynb]  vs   [Image_Reco_SonVsNotSon2_Model2.ipynb]  vs  [Image_Reco_SonVsNotSon2_Model3.ipynb]  
