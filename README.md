@@ -42,7 +42,7 @@ Here I shall discuss here some frequently used Neural Network algorithms those a
 •	Recurrent Neural Networks (RNN)
 •	Convolution Neural Networks (CNN)
 
-# ANN : 
+## ANN : 
 ANN is also known as a Feed-Forward Neural network because inputs are processed only in the forward direction. The feedforward neural network was 1st  and most basic type of artificial neural network
 
 ![ANN-Architecture1](ANN-Architecture1.png)
@@ -51,14 +51,14 @@ ANN is also known as a Feed-Forward Neural network because inputs are processed 
 Pros with ANN: 
 Artificial Neural Network is can handle any non-linear function. Due to this reason ANNS are well recognized as Universal Function Approximators. They have the ability to learn weights that map any input to the output.
 
-# RNN:  
+## RNN:  
 RNN defined on the principle of saving the output of a layer and feeding back to the input in order to predict the output of the layer. This allows it to display dynamic temporal behavior for a time sequence.
 Pros with RNN:
 RNN captures the sequential information appearing in the input data that means dependency between the words in the text while making predictions:
  
 ![RNN-Architecture1](RNN-Architecture1.png)
 
-# CNN :
+## CNN :
 Convolutional Neural Network (CNN, or ConvNet) has belongs to the DNN which is most commonly applied to analyzing computer images or visual imagery.
 These CNN models has been used across various image oriented applications and domains, and they are exclusively omnipresent in computer vision projects.
 Pros with CNN : 
